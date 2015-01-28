@@ -33,5 +33,5 @@
 	res + getDelta('domComplete');
 	res + getDelta('loadEventStart');
 	res + getDelta('loadEventEnd');
-  alert(res);
+    alert(res);
 })();
