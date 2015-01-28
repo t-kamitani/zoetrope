@@ -3,7 +3,9 @@
 	window.performance = window.performance || window.mozPerformance || window.msPerformance || window.webkitPerformance || {};
 	var timing = performance.timing || {};
 	var navigation = performance.navigation || {};
-
+	res = JSON.stringify(timing, null, "  "); 
+	alert(res);
+/**
 	function getDelta(endTiming) {
 		var begin = Timing('navigationStart');
 		var end   = Timing(endTiming);
@@ -33,4 +35,5 @@
 	res + getDelta('loadEventStart');
 	res + getDelta('loadEventEnd');
   alert(res);
+**/
 })();
