@@ -8,7 +8,7 @@
 	res += getDelta('page-loaded', 'navigationStart', 'loadEventEnd',timing);
 	
 	// サーバーサイド
-	res = getDelta('networking', 'navigationStart', 'responseEnd', , ,timing);
+	res = getDelta('networking', 'navigationStart', 'responseEnd',timing);
     res += getDelta('redirect', 'redirectStart', 'redirectEnd',timing);
 	res += getDelta('fetch', 'fetchStart', 'domainLookupStart',timing);
 	res += getDelta('dns', 'domainLookupStart', 'domainLookupEnd',timing);
