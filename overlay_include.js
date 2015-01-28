@@ -8,7 +8,7 @@
 	res += getDelta('page-loaded', 'navigationStart', 'loadEventEnd',timing);
 	
 	// サーバーサイド
-	res = "■" + getDelta('networking', 'navigationStart', 'responseEnd',timing);
+	res = "▼" + getDelta('networking', 'navigationStart', 'responseEnd',timing);
         res += getDelta('redirect', 'redirectStart', 'redirectEnd',timing);
 	res += getDelta('fetch', 'fetchStart', 'domainLookupStart',timing);
 	res += getDelta('dns', 'domainLookupStart', 'domainLookupEnd',timing);
@@ -18,7 +18,7 @@
 	res += getDelta('unloaded', 'unloadEventStart', 'unloadEventEnd',timing);
 	
 	// DOM構築全体
-	res += "■" + getDelta('dom-processing', 'domLoading', 'domComplete',timing);
+	res += "▼" + getDelta('dom-processing', 'domLoading', 'domComplete',timing);
 	// DOM構築内部処理1
 	res += getDelta('dom-loading', 'domLoading', 'domInteractive',timing);
 	// DOM構築内部処理2
@@ -27,7 +27,7 @@
 	res += getDelta('dom-complete', 'domContentLoadedEventEnd', 'domComplete',timing);
 	
 	// ロードイベント開始
-	res += getDelta('loading', 'loadEventStart', 'loadEventEnd',timing);
+	res += "▼" + getDelta('loading', 'loadEventStart', 'loadEventEnd',timing);
 
   alert(res);
 	function getDelta(label,startTiming,endTiming, timing) {
