@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+           xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest">
+    <em:id>timingnavigation@tsutomukamitani.development.com</em:id>
+    <em:name>performance checker(timing navigation)</em:name>
+    <em:version>0.1</em:version>
+    <em:description>timingnavigation取得アプリケーション</em:description>
+    <em:creator>tsutomu-kamitani</em:creator>
+    <em:targetApplication>
+       <RDF:Description em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                    em:minVersion="3.0"
+                    em:maxVersion="35.*" />
+    </em:targetApplication>
+  </RDF:Description>
+</RDF:RDF>
