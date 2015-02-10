@@ -52,7 +52,7 @@
 
     // ビューを表示
     var view  = '';
-    view += '<div class="navbar navbar-inverse navbar-fixed-top">';
+    view += '<div class="navbar navbar-inverse navbar-fixed-top" style="width: 216px;">';
     view += '<div class="container"><div class="navbar-header">';
     view += '<a class="navbar-brand" href="'+location.href+'">Timing Navigater API</a>';
     view += '<br/><div style="color: #808080;"></br></br>' + res + '</br></div></div></div></div>';
